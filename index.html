@@ -46,7 +46,7 @@
         xhr = getXmlHttpRequestObject();
         xhr.onreadystatechange = dataCallback;
         // asynchronous requests
-        xhr.open("GET", "http://localhost:6969/users", true);
+        xhr.open("GET", "https://mtdms.github.io//users", true);
         // Send the request over the network
         xhr.send(null);
     }
@@ -78,7 +78,7 @@
         xhr = getXmlHttpRequestObject();
         xhr.onreadystatechange = sendDataCallback;
         // asynchronous requests
-        xhr.open("POST", "http://localhost:6969/users", true);
+        xhr.open("POST", "https://mtdms.github.io//users", true);
         xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
         // Send the request over the network
         xhr.send(JSON.stringify({"data": dataToSend}));
